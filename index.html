@@ -1,1 +1,262 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Techno Spark | Innovate the Future</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #080d1b;
+      color: white;
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 22px 8%;
+      background: #0b1224;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .logo {
+      font-size: 25px;
+      font-weight: bold;
+      color: #00e5ff;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 22px;
+    }
+
+    nav a:hover {
+      color: #00e5ff;
+    }
+
+    .hero {
+      min-height: 85vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 60px 20px;
+      background:
+        radial-gradient(circle at top, #172d55, #080d1b 65%);
+    }
+
+    .hero h1 {
+      font-size: clamp(38px, 7vw, 68px);
+      line-height: 1.15;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 span {
+      color: #00e5ff;
+    }
+
+    .hero p {
+      color: #b8c5da;
+      max-width: 600px;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #00e5ff;
+      color: #06101b;
+      padding: 13px 28px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: white;
+      transform: translateY(-3px);
+    }
+
+    section {
+      padding: 75px 8%;
+      text-align: center;
+      scroll-margin-top: 80px;
+    }
+
+    section h2 {
+      font-size: 34px;
+      margin-bottom: 18px;
+    }
+
+    section h2 span {
+      color: #00e5ff;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(
+        auto-fit, minmax(220px, 1fr)
+      );
+      gap: 22px;
+      margin-top: 35px;
+    }
+
+    .card {
+      background: #111b30;
+      border: 1px solid #263650;
+      border-radius: 14px;
+      padding: 30px 20px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-7px);
+      border-color: #00e5ff;
+    }
+
+    .card .icon {
+      font-size: 38px;
+    }
+
+    .card h3 {
+      margin: 12px 0;
+      color: #00e5ff;
+    }
+
+    .about p {
+      max-width: 720px;
+      margin: auto;
+      color: #b8c5da;
+    }
+
+    .contact p {
+      margin-bottom: 22px;
+      color: #b8c5da;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #0b1224;
+      color: #a8b5c8;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      nav a {
+        margin: 0 7px;
+        font-size: 13px;
+      }
+
+      section {
+        padding: 55px 6%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">⚡ Techno Spark</div>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero" id="home">
+      <h1>Ignite Your<br>
+        <span>Digital Future</span>
+      </h1>
+
+      <p>
+        Welcome to Techno Spark — your partner for
+        innovative technology, creative websites,
+        and smart digital solutions.
+      </p>
+
+      <a class="btn" href="#services">Explore Services</a>
+    </div>
+
+    <section id="services">
+      <h2>Our <span>Services</span></h2>
+      <p>Technology that brings your ideas to life.</p>
+
+      <div class="services">
+        <div class="card">
+          <div class="icon">💻</div>
+          <h3>Web Development</h3>
+          <p>Modern, responsive websites for your business.</p>
+        </div>
+
+        <div class="card">
+          <div class="icon">🤖</div>
+          <h3>AI Solutions</h3>
+          <p>Smart solutions to simplify everyday work.</p>
+        </div>
+
+        <div class="card">
+          <div class="icon">🚀</div>
+          <h3>Digital Innovation</h3>
+          <p>Creative ideas powered by technology.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <h2>About <span>Techno Spark</span></h2>
+      <p>
+        We believe in turning ambitious ideas into
+        digital experiences. Our goal is to combine
+        creativity, technology, and innovation to
+        help businesses grow.
+      </p>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>Let's Build <span>Together</span></h2>
+      <p>Have an idea? Let's make it happen.</p>
+
+      <a class="btn"
+         href="mailto:hello@technospark.example">
+        Contact Us
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Techno Spark.
+      Created by Anurudh Singh.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
+
+</body>
+</html>
+
